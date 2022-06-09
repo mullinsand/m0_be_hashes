@@ -30,7 +30,7 @@ p foods[:grapes]
 # YOUR CODE HERE
 foods[:banana] = 47
 p foods
-=begin
+
 #-------------------
 # Part 2: Email
 #-------------------
@@ -41,18 +41,25 @@ p foods
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+email1 = {
+  from: "Nora",
+  receiver: "Andrew",
+  time_sent: "0546",
+  date_sent: "070922",
+  subject_line: "Good Morning!"
+}
 
 # Write code that prints your email hash to the terminal.
-
+p email1
 
 # Write code that prints all of the 'keys' of the email hash
 # you created above:
 # YOUR CODE HERE
-
+p email1.keys
 # Write code that prints all of the 'values' of the email hash
 # you created above:
 # YOUR CODE HERE
-
+p email1.values
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -102,4 +109,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
-=end
+
+emails = [
+    {
+    from: "Nora",
+    receiver: "Andrew",
+    time_sent: "0546",
+    date_sent: "070922",
+    subject_line: "Good Morning!"
+  },
+  {
+    from: "Andrew",
+    receiver: "Nora",
+    time_sent: "0549",
+    date_sent: "070922",
+    subject_line: "Good morning to you too!"
+  },
+  {
+    from: "Andrew",
+    receiver: "Nora",
+    time_sent: "0555",
+    date_sent: "070922",
+    subject_line: "Sorry about not emptying the dishwasher"
+  }
+]
+
+p emails
